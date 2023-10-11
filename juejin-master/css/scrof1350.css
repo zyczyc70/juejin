@@ -1,0 +1,21 @@
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 10.5rem;
+    overflow: hidden;
+}
+.search-input {
+    box-sizing: border-box;
+    border: none;
+    color: #8A919F;
+    outline: none;
+    width: 4.54rem;
+    padding: .26rem 0 .26rem .4rem;
+    transition: all 0.3s;
+}
+.input-inputfocused {
+    width: 8.87rem;
+}
+#more-list{
+    right: 5.5rem;
+}

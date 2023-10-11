@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="icon/header-icon.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: inline-block;
+        }
+        .main-header {
+            border-bottom: 1px solid #f1f1f1;
+            height: 5rem;
+            width: 100%;
+            color: #909090;
+            z-index: 250;
+            position: fixed;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            /*    align-items: center;用于浮动元素，能够使图片居中*/
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .logo-img {
+            display: inline-block;
+            width: auto;
+            align-items: center;
+        }
+
+        .logo-img:hover {
+            cursor: pointer;
+        }
+
+        .main-nav {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            /*background-color: #55a532;*/
+        }
+
+        .right-side-nav {
+            height: 100%;
+            display: inline-block;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+        }
+
+        .left-side-nav {
+            display: flex;
+            width: auto;
+        }
+
+        a {
+            text-decoration: none;
+            height: 5rem;
+            line-height: 5rem;
+            color: #909090;
+            /*background-color: #1e80ff;*/
+        }
+        a:hover{
+            color: #1d2129;
+
+        }
+        .left-side-nav .nav-item:hover {
+            border-bottom: #1e80ff 2px solid;
+        }
+
+        .nav-item {
+            display: flex;
+            font-size: 1.167rem;
+            color: #86909c;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+            position: relative;
+            height: 100%;
+            /*background-color: palegoldenrod;*/
+        }
+
+        input {
+            border-radius: 3px;
+            font-size: 1.1rem;
+            color: #8a919f;
+            background-color: transparent;
+            width: 200px;
+            transition: width .3s;
+            padding: .6rem 0 .6rem 1rem;
+            /*align-items: center;*/
+        }
+
+        input:focus {
+            outline-color: #1E80FF;
+            width: 450px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .icon-search {
+            position: absolute;
+            background-image: url("/img/search.png");
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+            left: 90%;
+            top: 50%;
+            margin-top: -8px;
+        }
+
+        .search-add {
+            margin-top: 20px;
+            margin-left: -10rem;
+        }
+
+        .add-group {
+            margin-top: -2px;
+        }
+
+        .creator-item {
+            display: inline-block;
+            font-family: "Microsoft YaHei UI", serif;
+            border: none;
+            color: white;
+            font-size: 1.167rem;
+            cursor: pointer;
+            height: 3rem;
+            width: 8rem;
+            transition: visibility .1s ease .05s;
+            border-right: 1px white solid;
+            border-radius: 3px 0 0 3px;
+            background-color: #1e80ff;
+        }
+
+        .creator-item:hover {
+            background-color: #1171EE;
+        }
+
+        .more:hover {
+            background-color: #1171EE;
+        }
+
+        .more {
+            display: inline-block;
+            position: relative;
+            transition: visibility .1s ease .05s;
+            float: right;
+            height: 3rem;
+            width: 1rem;
+            background-color: #1e80ff;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .icon-xiasanjiaoxing {
+            float: left;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 30%;
+        }
+        .notification{
+            float: left;
+            left: 34rem;
+            width:50px;
+            height: 100%;
+            padding: 0 1rem;
+        }
+        .icon-tixingtianchong{
+            font-size: 2rem;
+            color:#8A919F ;
+        }
+        .icon-tixingtianchong:hover{
+            color: #515767;
+        }
+        .vip{
+            float: left;
+            left: 25rem;
+            width: auto;
+            padding: 0 1rem;
+        }
+        .vip-img{
+            width: 2rem;
+            height: auto;
+        }
+        .ad{
+            width: 230px;
+            height: 80px;
+        }
+        .head-img{
+            width: 50px;
+            height: 50px;
+        }
+        .head{
+            display: flex;
+            flex-shrink: 0;
+            float: left;
+            top: 0.8rem;
+            left:27rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container">
+        <img class="logo-img" src="img/juejinLogo.jpg">
+        <nav role="navigation" class="main-nav">
+            <ul class="left-side-nav">
+                <li class="nav-item link-item">
+                    <a href="#">首页</a>
+                </li>
+                <li class="nav-item link-item">
+                    <a href="#">沸点</a>
+                </li>
+                <li class="nav-item link-item">
+                    <a href="#">课程</a>
+                </li>
+                <li class="nav-item link-item">
+                    <a href="#">直播</a>
+                </li>
+                <li class="nav-item link-item">
+                    <a href="#">活动</a>
+                </li>
+                <li class="nav-item link-item">
+                    <a href="#">商城</a>
+                </li>
+                <li class="nav-item link-item">
+                    <img src="img/ad.png"  class="ad" alt="">
+                </li>
+            </ul>
+            <ul class="right-side-nav">
+                <ul class="search-add">
+                    <li class="nav-item search">
+                        <input type="text" placeholder="探索稀土掘金" name="" id="">
+                        <i class="icon-search"></i>
+                    </li>
+                    <li class="nav-item add-group ">
+                        <button class="creator-item">创作者中心</button>
+                        <div class="more">
+                            <i class="iconfont icon-xiasanjiaoxing"></i>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nav-item notification">
+                    <i class="iconfont icon-tixingtianchong"></i>
+                </div>
+                <div class="nav-item vip">
+                    <img src="/img/vip.svg" class="vip-img">
+                </div>
+                <div class="nav-item head">
+                    <img src="img/head.image" class="head-img" alt="">
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        let search = document.querySelector("input");
+        let addGroup = document.querySelector('.add-group');
+        let triangle = document.querySelector('.icon-xiasanjiaoxing');
+        let more = document.querySelector('.more');
+        let flag = 0;
+        search.addEventListener('focus', function () {
+            this.setAttribute('placeholder', '搜索文章/小册/标签/用户');
+            addGroup.style.visibility = 'hidden';
+        })
+        search.addEventListener("blur", function () {
+            this.setAttribute('placeholder', '探索稀土掘金');
+            addGroup.style.visibility = 'visible';
+        })
+        more.addEventListener('click', function () {
+            if (flag === 0) {
+                triangle.style.transform = 'rotate(180deg)';
+                // triangle.style.transform-origin = 'center center';
+                flag = 1;
+            } else {
+                triangle.style.transform = 'rotate(0deg)';
+                flag = 0;
+            }
+            triangle.style.transition = 'transform .1s';
+        })
+
+    </script>
+</header>
+</body>
+</html>

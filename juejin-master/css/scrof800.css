@@ -1,0 +1,17 @@
+.add-group{
+    display: none;
+}
+#nav-bar{
+    overflow:visible;
+}
+.search{
+    overflow: visible;
+    width: 7.56rem;
+    justify-content: flex-start;
+}
+.search-input{
+    width: 5.94rem;
+}
+.input-inputfocused {
+    width: 9.16rem;
+}

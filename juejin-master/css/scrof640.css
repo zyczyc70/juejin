@@ -1,0 +1,18 @@
+.search-input{
+    width: 3.43rem;
+}
+.search{
+    width: 5.05rem;
+}
+.input-inputfocused {
+    width: 6.16rem;
+}
+#logo{
+    display: none;
+}
+#logo-hidden{
+    display: block;
+}
+#index-menu{
+    left: 0rem;
+}

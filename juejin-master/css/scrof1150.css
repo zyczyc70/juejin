@@ -1,0 +1,13 @@
+#index-item{
+    display: none;
+}
+#hidden-index{
+    display: block;
+}
+
+#member span{
+    display: block;
+}
+#more-list{
+    right: 6.5rem;
+}

@@ -1,0 +1,21 @@
+.search {
+    display: flex;
+    justify-content: space-between;
+    width: 13.79rem;
+    overflow: hidden;
+}
+.search-input {
+    box-sizing: border-box;
+    border: none;
+    color: #8A919F;
+    outline: none;
+    width: 7.2rem;
+    padding: .26rem 0 .26rem .4rem;
+    transition: all 0.3s;
+}
+.input-inputfocused {
+    width: 12.18rem;
+}
+#index-item nav:not(:first-of-type){
+    display: none;
+}

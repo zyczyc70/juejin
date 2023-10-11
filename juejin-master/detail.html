@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掘金文章详情页</title>
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="icon/header-icon.css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+<!--    <header>-->
+<!--        <img src="img/导航栏.jpg" style="height: 100%;">-->
+<!--    </header>-->
+<div class="main-header-box">
+    <header class="main-header">
+        <div class="container">
+            <img class="logo-img" src="img/juejinLogo.jpg">
+            <nav role="navigation" class="main-nav">
+                <ul class="left-side-nav">
+                    <li class="nav-item link-item">
+                        <a href="#">首页</a>
+                    </li>
+                    <li class="nav-item link-item">
+                        <a href="#">沸点</a>
+                    </li>
+                    <li class="nav-item link-item">
+                        <a href="#">课程</a>
+                    </li>
+                    <li class="nav-item link-item">
+                        <a href="#">直播</a>
+                    </li>
+                    <li class="nav-item link-item">
+                        <a href="#">活动</a>
+                    </li>
+                    <li class="nav-item link-item">
+                        <a href="#">商城</a>
+                    </li>
+                    <li class="nav-item link-item">
+                        <img src="img/ad.png" class="ad" alt="">
+                    </li>
+                </ul>
+                <ul class="right-side-nav">
+                    <ul class="search-add">
+                        <li class="nav-item search">
+                            <input type="text" placeholder="探索稀土掘金" name="" id="">
+                            <i class="icon-search"></i>
+                        </li>
+                        <li class="nav-item add-group ">
+                            <button class="creator-item">创作者中心</button>
+                            <div class="more">
+                                <i class="iconfont icon-xiasanjiaoxing"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="nav-item notification">
+                        <i class="iconfont icon-tixingtianchong" style="font-size: 2rem"></i>
+                    </div>
+                    <div class="nav-item vip">
+                        <img src="/img/vip.svg" class="vip-img">
+                    </div>
+                    <div class="nav-item head">
+                        <img src="img/head.image" class="head-img" alt="">
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+<section>
+    <!-- 左边栏 -->
+    <aside class="left">
+        <ul>
+            <li>
+                <i class="iconfont icon-dianzan_kuai" style="font-size:20px;"></i>
+            </li>
+            <li>
+                <i href="#criticism" class="iconfont icon-pinglun" style="font-size:20px;"></i>
+            </li>
+            <li>
+                <i class="iconfont icon-shoucang" style="font-size:20px;"></i>
+            </li>
+            <li>
+                <i class="iconfont icon-fenxiang" style="font-size:20px;"></i>
+            </li>
+            <li style="margin-top:40px;">
+                <i class="iconfont icon-jinggao" style="font-size:20px;"></i>
+            </li>
+            <li>
+                <i class="iconfont icon-saoyisao" style="font-size:20px;"></i>
+            </li>
+        </ul>
+        <div class="yuedu">沉浸阅读</div>
+        <div class="share">
+            <ul>
+                <li>
+                    <i class="iconfont icon-weixin"></i>微信
+                </li>
+                <li>
+                    <i class="iconfont icon-xinlangweibo"></i>新浪微博
+                </li>
+                <li>
+                    <i class="iconfont icon-QQ"></i>QQ
+                </li>
+            </ul>
+            <span class="sharesj"></span>
+        </div>
+        <span class="yuesj"></span>
+    </aside>
+
+    <!-- 中间主要内容 -->
+    <main class="center">
+        <!-- 文章内容 -->
+        <div class="article">
+            <h1>文章内容，长度不写，根据内容多少自动？写代码真累，看看美女</h1>
+            <img src="img/布.jpg" style="margin-top:20px;width:70%;">
+            <h3 id="biaotiyi">标题一</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <pre>
+  <code class="javascript">
+     // 这里是需要高亮的代码
+      import React, { Component } from 'react'
+      class ErrorBoundary extends Component {
+        state = {
+          error: null,
+          errorInfo: null,
+        }
+        componentDidCatch (error, errorInfo) {
+          this.setState({
+            error,
+            errorInfo,
+            hasError: true,
+          })
+        }
+        render() {
+          if (this.state.errorInfo) {
+            return (
+              <details>
+                <summary>Something went wrong.</summary>
+                <p>{ JSON.stringify(this.state.errorInfo) }</p>
+              </details>
+            )
+          }
+          return this.props.children
+        }
+      }
+      export default ErrorBoundary
+  </code>
+  </pre>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <h3 id="biaotier">标题二</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <h3 id="biaotisan">标题三</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <h3 id="biaotisi">标题四</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <h3 id="biaotiwu">标题五</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <h3 id="biaotiliu">标题六</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <h3 id="biaotiqi">标题七</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <h3 id="biaotiba">标题八</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <h3 id="biaotijiu">标题九</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt tempore sunt esse quo,
+                natus dignissimos explicabo quis ad, magni vitae quaerat deserunt qui commodi velit aperiam
+                voluptatum dolorum voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                nesciunt tempore sunt esse quo, natus dignissimos explicabo quis ad, magni vitae quaerat deserunt
+                qui commodi velit aperiam voluptatum dolorum voluptatem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima necessitatibus temporibus fugiat
+                officiis dolorum explicabo ipsam eveniet! Deserunt dolor, quas, repellendus sequi dolore nemo minima
+                delectus eius tempora maxime ipsa?</p>
+        </div>
+        <!-- 评论 -->
+        <div class="criticism" id="criticism">
+            <div class="criticism-title">
+                <div style="margin-bottom:22px;">
+                    <span style="font-size:18px;font-weight:700;">评论</span>
+                </div>
+                <div style="height:74px;">
+                    <img src="img/头像.jpg">
+                    <div style="float:right;">
+                        <input type="text" placeholder="输入评论（Enter换行，Ctrl + Enter发送）">
+                    </div>
+                </div>
+                <div class="publish">
+                    <div style="width:46px;height:24px;margin-right:24px;">表情</div>
+                    <div style="width:46px;height:24px;">图片</div>
+                    <div style="text-align:end;flex:1;">
+                        <span>Ctrl + Enter</span>
+                        <button class="publish_btn">发表评论</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hot-criticism">
+                <div class="hot-criticism-title">热门评论</div>
+                <div>5个热评，每个高差不多420px</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="all-criticism">
+                <div class="all-criticism-title">全部评论</div>
+                <div class="all-content">
+                    <div style="height:5500px;background-color: pink;">用个大盒子代替先,弄个粉色看看先</div>
+                </div>
+                <div class="look-all-criticism">查看全部评论</div>
+            </div>
+        </div>
+        <!-- 推荐 -->
+        <div class="recommend">
+            <div class="recommend-title"><span>相关推荐</span></div>
+            <div class="recommend-lis">
+                <li class="recommend-li">
+                    <div>
+                        <div class="recommend-li-top">
+                            <a class="username" target="_blank" href="userpage.html"
+                               style="padding:0px;width:80px;border:none;text-align: start;">用户名</a>
+                            <a class="showtime" target="_blank" href="detail.html">发布时间</a>
+                            <a class="userjob" target="_blank" href="job.html">某个岗位</a>
+                        </div>
+                        <div class="recommend-li-title">
+                            <a target="_blank" href="detail.html">震惊！16岁少女四年前竟然12岁…</a>
+                            <ul class="see-good-say">
+                                <li>
+                                    <i class="iconfont icon-yanjing1"></i><span>8888</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-dianzan"></i><span>7777</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-pinglun1"></i><span>6666</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="recommend-li">
+                    <div>
+                        <div class="recommend-li-top">
+                            <a class="username" target="_blank" href="userpage.html"
+                               style="padding:0px;width:80px;border:none;text-align: start;">用户名</a>
+                            <a class="showtime" target="_blank" href="detail.html">发布时间</a>
+                            <a class="userjob" target="_blank" href="job.html">某个岗位</a>
+                        </div>
+                        <div class="recommend-li-title">
+                            <a target="_blank" href="detail.html">震惊！16岁少女四年前竟然12岁…</a>
+                            <ul class="see-good-say">
+                                <li>
+                                    <i class="iconfont icon-yanjing1"></i><span>8888</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-dianzan"></i><span>7777</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-pinglun1"></i><span>6666</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="recommend-li">
+                    <div>
+                        <div class="recommend-li-top">
+                            <a class="username" target="_blank" href="userpage.html"
+                               style="padding:0px;width:80px;border:none;text-align: start;">用户名</a>
+                            <a class="showtime" target="_blank" href="detail.html">发布时间</a>
+                            <a class="userjob" target="_blank" href="job.html">某个岗位</a>
+                        </div>
+                        <div class="recommend-li-title">
+                            <a target="_blank" href="detail.html">震惊！16岁少女四年前竟然12岁…</a>
+                            <ul class="see-good-say">
+                                <li>
+                                    <i class="iconfont icon-yanjing1"></i><span>8888</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-dianzan"></i><span>7777</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-pinglun1"></i><span>6666</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="recommend-li">
+                    <div>
+                        <div class="recommend-li-top">
+                            <a class="username" target="_blank" href="userpage.html"
+                               style="padding:0px;width:80px;border:none;text-align: start;">用户名</a>
+                            <a class="showtime" target="_blank" href="detail.html">发布时间</a>
+                            <a class="userjob" target="_blank" href="job.html">某个岗位</a>
+                        </div>
+                        <div class="recommend-li-title">
+                            <a target="_blank" href="detail.html">震惊！16岁少女四年前竟然12岁…</a>
+                            <ul class="see-good-say">
+                                <li>
+                                    <i class="iconfont icon-yanjing1"></i><span>8888</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-dianzan"></i><span>7777</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-pinglun1"></i><span>6666</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="recommend-li">
+                    <div>
+                        <div class="recommend-li-top">
+                            <a class="username" target="_blank" href="userpage.html"
+                               style="padding:0px;width:80px;border:none;text-align: start;">用户名</a>
+                            <a class="showtime" target="_blank" href="detail.html">发布时间</a>
+                            <a class="userjob" target="_blank" href="job.html">某个岗位</a>
+                        </div>
+                        <div class="recommend-li-title">
+                            <a target="_blank" href="detail.html">震惊！16岁少女四年前竟然12岁…</a>
+                            <ul class="see-good-say">
+                                <li>
+                                    <i class="iconfont icon-yanjing1"></i><span>8888</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-dianzan"></i><span>7777</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-pinglun1"></i><span>6666</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="recommend-li">
+                    <div>
+                        <div class="recommend-li-top">
+                            <a class="username" target="_blank" href="userpage.html"
+                               style="padding:0px;width:80px;border:none;text-align: start;">用户名</a>
+                            <a class="showtime" target="_blank" href="detail.html">发布时间</a>
+                            <a class="userjob" target="_blank" href="job.html">某个岗位</a>
+                        </div>
+                        <div class="recommend-li-title">
+                            <a target="_blank" href="detail.html">震惊！16岁少女四年前竟然12岁…</a>
+                            <ul class="see-good-say">
+                                <li>
+                                    <i class="iconfont icon-yanjing1"></i><span>8888</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-dianzan"></i><span>7777</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-pinglun1"></i><span>6666</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="recommend-li">
+                    <div>
+                        <div class="recommend-li-top">
+                            <a class="username" target="_blank" href="userpage.html"
+                               style="padding:0px;width:80px;border:none;text-align: start;">用户名</a>
+                            <a class="showtime" target="_blank" href="detail.html">发布时间</a>
+                            <a class="userjob" target="_blank" href="job.html">某个岗位</a>
+                        </div>
+                        <div class="recommend-li-title">
+                            <a target="_blank" href="detail.html">震惊！16岁少女四年前竟然12岁…</a>
+                            <ul class="see-good-say">
+                                <li>
+                                    <i class="iconfont icon-yanjing1"></i><span>8888</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-dianzan"></i><span>7777</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-pinglun1"></i><span>6666</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="recommend-li">
+                    <div>
+                        <div class="recommend-li-top">
+                            <a class="username" target="_blank" href="userpage.html"
+                               style="padding:0px;width:80px;border:none;text-align: start;">用户名</a>
+                            <a class="showtime" target="_blank" href="detail.html">发布时间</a>
+                            <a class="userjob" target="_blank" href="job.html">某个岗位</a>
+                        </div>
+                        <div class="recommend-li-title">
+                            <a target="_blank" href="detail.html">震惊！16岁少女四年前竟然12岁…</a>
+                            <ul class="see-good-say">
+                                <li>
+                                    <i class="iconfont icon-yanjing1"></i><span>8888</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-dianzan"></i><span>7777</span>
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-pinglun1"></i><span>6666</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+<!--                <div id="footer" style="width: auto;height: 20px">1222333445566</div>-->
+                <li id="footer" style="color: #F4F5F5" >1</li>
+            </div>
+        </div>
+    </main>
+
+    <!-- 右边栏 -->
+    <div class="right">
+        <div style="width:300px;height:184px;">
+            文章被点赞和阅读信息，再看美女
+            <img src="img/徐梦洁.gif" style="height: 80%;">
+        </div>
+        <div style="width:300px;height:90px;">二维码，下载稀土掘金APP</div>
+        <div style="width:300px;height:445px;">
+            相关文章，还看美女
+            <img src="img/李凯馨.jpg" style="width: 90%;">
+        </div>
+        <div class="h3-lis">
+            <div class="h3-lis-title">目录</div>
+            <div class="h3-nav">
+                <ul>
+                    <li>
+                        <a href="#biaotiyi" class="here">标题一</a>
+                    </li>
+                    <li>
+                        <a href="#biaotier">标题二</a>
+                    </li>
+                    <li>
+                        <a href="#biaotisan">标题三</a>
+                    </li>
+                    <li>
+                        <a href="#biaotisi">标题四</a>
+                    </li>
+                    <li>
+                        <a href="#biaotiwu">标题五</a>
+                    </li>
+                    <li>
+                        <a href="#biaotiliu">标题六</a>
+                    </li>
+                    <li>
+                        <a href="#biaotiqi">标题七</a>
+                    </li>
+                    <li>
+                        <a href="#biaotiba">标题八</a>
+                    </li>
+                    <li>
+                        <a href="#biaotijiu">标题九</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右下角 -->
+    <div class="right-bottom">
+        <ul>
+            <li class="back-top">
+                <i class="iconfont icon-back-top1_fill"></i>
+            </li>
+            <li class="suggest">
+                <i class="iconfont icon-wojianyi"></i>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- 收藏弹出框 -->
+<div class="box-sc">
+    <div class="sc-title">
+        <h3 style="margin-bottom:5px;">选择收藏集</h3>
+        <p style="font-size:12px;color:#999;">选择或创建你想添加的收藏集</p>
+        <span class="close">×</span>
+    </div>
+    <div class="sc-main" style="height:330px;">
+        已有收藏夹
+    </div>
+    <div class="sc-footer" style="height: 70px;">
+        新建收藏夹
+    </div>
+</div>
+<!-- 举报弹出框 -->
+<div class="box-jb">
+    <div class="jb-title">
+        举报反馈
+        <span class="close">×</span>
+    </div>
+    <hr>
+    <div class="jb-main">
+        <p style="margin:16px;font-size: 14px;color: #999;">
+            掘金工作人员会尽快受理你的举报，随后将通过站内信告知你处理的结果，请尽量补充完整描述</p>
+        <div class="jb-content">举报的具体内容</div>
+    </div>
+</div>
+<div class="bg"></div>
+</body>
+<script src="js/animate.js"></script>
+<script src="js/detail.js"></script>
+</html>

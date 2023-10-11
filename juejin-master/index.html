@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掘金</title>
+    <link rel="shortcut icon"
+        href="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/6c61ae65d1c41ae8221a670fa32d05aa.svg">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" media="screen and (max-width:1920px)">
+    <link rel="stylesheet" type="text/css" href="./css/scrof1350.css" media="screen and (max-width:1350px)">
+    <link rel="stylesheet" type="text/css" href="./css/scrof1270.css" media="screen and (max-width:1270px)">
+    <link rel="stylesheet" type="text/css" href="./css/scrof1190.css" media="screen and (max-width:1190px)">
+    <link rel="stylesheet" type="text/css" href="./css/scrof1150.css" media="screen and (max-width:1150px)">
+    <link rel="stylesheet" type="text/css" href="./css/scrof960.css" media="screen and (max-width:960px)">
+    <link rel="stylesheet" type="text/css" href="./css/scrof800.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" type="text/css" href="./css/scrof640.css" media="screen and (max-width:640px)">
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div id="nav-bar">
+        <div id="left-nav">
+            <div id="logo-hidden">
+                <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/6c61ae65d1c41ae8221a670fa32d05aa.svg"
+                    alt="juejin">
+            </div>
+            <div id="logo">
+                <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg"
+                    alt="juejin">
+            </div>
+            <!-- 首页隐藏菜单栏 -->
+            <a id="hidden-index" href="#">
+                <span class="active">首页</span>
+                <svg class="hiddensvg" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.45025 4.82383C2.17422 4.49908 2.40501 4 2.83122 4H9.16878C9.59499 4 9.82578 4.49908 9.54975 4.82382L6.38097 8.5518C6.1813 8.7867 5.8187 8.7867 5.61903 8.5518L2.45025 4.82383Z">
+                    </path>
+                </svg>
+            </a>
+            <ul id="index-menu">
+                <li><a class="active" href="#">首页</a></li>
+                <li><a href="#">沸点</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">活动</a></li>
+                <nav><a href="#">商城</a></nav>
+            </ul>
+            <!-- 显示菜单栏 -->
+            <ul id="index-item">
+                <li><a class="active" href="#">首页</a></li>
+                <li><a href="#">沸点</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">活动</a></li>
+                <nav><a href="#">商城</a></nav>
+                <nav><a href="#">APP</a></nav>
+                <nav><a href="#">插件</a></nav>
+            </ul>
+        </div>
+        <ul id="right-nav">
+            <li class="search">
+                <form action="search" class="search-form">
+                    <input type="search" maxlength="32" placeholder="探索稀土掘金" value="" class="search-input">
+                    <div class="search-icon">
+                        <img id="search-img"
+                            src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/1e8ab9a22f0ddc36349f60b38900d0bd.svg"
+                            alt="搜索">
+                    </div>
+                </form>
+
+                <div class="add-group">
+                    <button id="add-btn">创作者中心</button>
+                    <div id="more">
+                        <a id="more-svg" href="javascript:;">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.45025 4.82383C2.17422 4.49908 2.40501 4 2.83122 4H9.16878C9.59499 4 9.82578 4.49908 9.54975 4.82382L6.38097 8.5518C6.1813 8.7867 5.8187 8.7867 5.61903 8.5518L2.45025 4.82383Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                        <ul id="more-list" class="hidden">
+                            <li><a href="#">
+                                    <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/a0c8073862f04c2925249fd397763fd3.svg"
+                                        alt="">
+                                    <span class="icon write-article">写文章</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e5381c85b5939d984a4b0c0edf102122.svg"
+                                        alt="">
+                                    <span>发沸点</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/01c75d281edffa91cacfb93189c940b4.svg"
+                                        alt="">
+                                    <span>写代码</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li id="member">
+                <a href="#">
+                    <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/24127194d5b158d7eaf8f09a256c5d01.svg"
+                        alt="会员">
+                    <span>会员</span>
+                </a>
+            </li>
+            <li id="login">
+                <button id="login-btn">登录</button>
+            </li>
+        </ul>
+    </div>
+    <div id="nav-list">
+        <div id="nav-list-left">
+            <ul id="nav-item">
+                <li><a href="#"><span class="active">综合</span></a></li>
+                <li><a href="#">关注</a></li>
+                <li>
+                    <a href="#" id="1">后端</a>
+                    <div id="backend">
+                        <ul>
+                            <li><a href="#">后端</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">Go</a></li>
+                            <li><a href="#">算法</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Spring Boot</a></li>
+                            <li><a href="#">数据库</a></li>
+                            <li><a href="#">MySQL</a></li>
+                            <li><a href="#">面试</a></li>
+                            <li><a href="#">Redis</a></li>
+                            <li><a href="#">架构</a></li>
+                            <li><a href="#">LeetCode</a></li>
+                            <li><a href="#">Spring</a></li>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">Linux</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="2">前端</a>
+                    <div id="fontend">
+                        <ul>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Vue.js</a></li>
+                            <li><a href="#">React.js</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">面试</a></li>
+                            <li><a href="#">TypeScript</a></li>
+                            <li><a href="#">Node.js</a></li>
+                            <li><a href="#">后端</a></li>
+                            <li><a href="#">前端框架</a></li>
+                            <li><a href="#">算法</a></li>
+                            <li><a href="#">Webpack</a></li>
+                            <li><a href="#">架构</a></li>
+                            <li><a href="#">微信小程序</a></li>
+                            <li><a href="#">Android</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="3">Android</a>
+                    <div id="android">
+                        <ul>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">Flutter</a></li>
+                            <li><a href="#">Kotlin</a></li>
+                            <li><a href="#">Android Jetpack</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">APP</a></li>
+                            <li><a href="#">源码</a></li>
+                            <li><a href="#">面试</a></li>
+                            <li><a href="#">Android Studio</a></li>
+                            <li><a href="#">性能优化</a></li>
+                            <li><a href="#">架构</a></li>
+                            <li><a href="#">gradle</a></li>
+                            <li><a href="#">游戏</a></li>
+                            <li><a href="#">iOS</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="4">iOS</a>
+                    <div id="ios">
+                        <ul>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="#">Swift</a></li>
+                            <li><a href="#">SwiftUI</a></li>
+                            <li><a href="#">Flutter</a></li>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">算法</a></li>
+                            <li><a href="#">LeetCode</a></li>
+                            <li><a href="#">Objective-C</a></li>
+                            <li><a href="#">Xcode</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">WWDC</a></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">计算机视觉</a></li>
+                            <li><a href="#">设计模式</a></li>
+                            <li><a href="#">前端框架</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="5">人工智能</a>
+                    <div id="ai">
+                        <ul>
+                            <li><a href="#">人工智能</a></li>
+                            <li><a href="#">深度学习</a></li>
+                            <li><a href="#">算法</a></li>
+                            <li><a href="#">机器学习</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">计算机视觉</a></li>
+                            <li><a href="#">后端</a></li>
+                            <li><a href="#">NLP</a></li>
+                            <li><a href="#">PyTorch</a></li>
+                            <li><a href="#">神经网络</a></li>
+                            <li><a href="#">TensorFlow</a></li>
+                            <li><a href="#">数据分析</a></li>
+                            <li><a href="#">程序员</a></li>
+                            <li><a href="#">自动驾驶</a></li>
+                            <li><a href="#">pandas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="6">开发工具</a>
+                    <div id="freebie">
+                        <ul>
+                            <li><a href="#">后端</a></li>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">开源</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Git</a></li>
+                            <li><a href="#">Linux</a></li>
+                            <li><a href="#">程序员</a></li>
+                            <li><a href="#">设计</a></li>
+                            <li><a href="#">大数据</a></li>
+                            <li><a href="#">Unitiy3D</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">测试</a></li>
+                            <li><a href="#">数据库</a></li>
+                            <li><a href="#">架构</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="7">代码人生</a>
+                    <div id="career">
+                        <ul>
+                            <li><a href="#">程序员</a></li>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">后端</a></li>
+                            <li><a href="#">算法</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">年终总结</a></li>
+                            <li><a href="#">开源</a></li>
+                            <li><a href="#">架构</a></li>
+                            <li><a href="#">面试</a></li>
+                            <li><a href="#">数据库</a></li>
+                            <li><a href="#">大数据</a></li>
+                            <li><a href="#">数据结构</a></li>
+                            <li><a href="#">Linux</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="8">阅读</a>
+                    <div id="article">
+                        <ul>
+                            <li><a href="#">云原生</a></li>
+                            <li><a href="#">程序员</a></li>
+                            <li><a href="#">笔记</a></li>
+                            <li><a href="#">前端</a></li>
+                            <li><a href="#">后端</a></li>
+                            <li><a href="#">开源</a></li>
+                            <li><a href="#">Serverless</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">微服务</a></li>
+                            <li><a href="#">容器</a></li>
+                            <li><a href="#">产品</a></li>
+                            <li><a href="#">Kubernetes</a></li>
+                            <li><a href="#">深度学习</a></li>
+                            <li><a href="#">架构</a></li>
+                            <li><a href="#">测试</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-list-right">
+            <a href="#">标签管理</a>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div id="content">
+        <div id="main">
+            <div id="header">
+                <ul id="header-left">
+                    <li id="l1"><a href=""><span class="active">推荐</span></a></li>
+                    <li id="l2"><a href="">最新</a></li>
+                    <li><a href="">热榜</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="entry-list-wrap">
+                    <div name="entry-list" tag="div" class="list entry-list" ad-list>
+                        <!-- 第一个文章是广告 -->
+                        <li class="item">
+                            <div class="advertisement">
+                                <div class="meta-container">
+                                    <div class="user-message">
+                                        <a href="#" target="_blank" rel="" class="userbox">
+                                            <div class="popover-box user-popover">掘金直播</div>
+                                        </a>
+                                    </div>
+                                    <data class="dividing"></data>
+                                    <div class="date">1天前</div>
+                                </div>
+                                <div class="tag">广告</div>
+                                <div class="main">
+                                    <div class="info-box">
+                                        <a href="https://juejin.cn/live/257958?utm_source=web1&utm_medium=feed&utm_campaign=xunlianying06"
+                                            target="_blank" class="title">【创作者训练营】玩转掘金创作功能，助力创作成长</a>
+                                        <a href="https://juejin.cn/live/257958?utm_source=web1&utm_medium=feed&utm_campaign=xunlianying06"
+                                            target="_blank"
+                                            class="description">工欲善其事必先利其器，你是否对掘金的创作工具了如指掌呢？你是否了解创作等级和权益是如何对应的？掘金APP包含哪些与创作相关的功能？本次直播我们邀请到了掘金负责创作者工具的产品同学雪菲来分享。</a>
+                                    </div>
+                                    <img src="./img/advertisement.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 后面是文章列表 -->
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/712958874760926" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">JosiahZhao</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                        <a href="https://juejin.cn/tag/JavaScript" target="_blank" rel=""
+                                            class="tag">JavaScript</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel=""
+                                                title="聊一聊前端程序员的现状与挑战" class="title">聊一聊前端程序员的现状与挑战</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel="">
+                                                <div>
+                                                    前端这一块，得益于日益更新的前端框架降低了入门门槛，得益于目前全自动、半自动化的开发、测试、上线流程，也得益于目前越来越标准的产品设计流程和规范，等等这些都会让你的开发效率和工作量评估更加透明化。
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>3931</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>14</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3702810893364350" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">why技术</div>
+                                    </a>
+                                    <div class="date">4月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%90%8E%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">后端</a>
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel=""
+                                                title="初看一脸懵逼，看懂直接跪下！" class="title">初看一脸懵逼，看懂直接跪下！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel="">
+                                                <div>你好呀，我是歪歪。我最近在 stackoverflow 上看到一段代码，怎么说呢。就是初看一脸懵逼，看懂直接跪下！我先带你看看
+                                                    stackoverflow 上的这个问题是啥，然后引出这段代码：</div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>2.6w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>322</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>58</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article1.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3360527239635373" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">一颗彪悍的种子</div>
+                                    </a>
+                                    <div class="date">3月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                        <a href="https://juejin.cn/tag/JVM" target="_blank" rel="" class="tag">JVM</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel=""
+                                                title="我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！"
+                                                class="title">我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel="">
+                                                <div>
+                                                    什么是JVM？为什么说JVM是要这样子呢？我带着这些疑问从冯诺依曼计算机体系追问计算机结构的思想是什么，操作系统的的本质又是什么？原来一切如此！
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>1.9w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>139</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article2.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3878732754067063" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">小木公子</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel=""
+                                                title="一只代码狗的年中自述" class="title">一只代码狗的年中自述</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel="">
+                                                <div>引言 自述
+                                                    我大学毕业于安徽一所普通的本科院校，生于安徽的某个小县城的某个普通的家庭，农民的儿子，家里在生我之前已经有了三个姐姐，所以虽说家庭条件一般，但我在家里的地位可算得上宠上天的那种角色，一路走
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>6376</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>49</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>44</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article3.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/712958874760926" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">JosiahZhao</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                        <a href="https://juejin.cn/tag/JavaScript" target="_blank" rel=""
+                                            class="tag">JavaScript</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel=""
+                                                title="聊一聊前端程序员的现状与挑战" class="title">聊一聊前端程序员的现状与挑战</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel="">
+                                                <div>
+                                                    前端这一块，得益于日益更新的前端框架降低了入门门槛，得益于目前全自动、半自动化的开发、测试、上线流程，也得益于目前越来越标准的产品设计流程和规范，等等这些都会让你的开发效率和工作量评估更加透明化。
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>3931</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>14</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3702810893364350" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">why技术</div>
+                                    </a>
+                                    <div class="date">4月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%90%8E%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">后端</a>
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel=""
+                                                title="初看一脸懵逼，看懂直接跪下！" class="title">初看一脸懵逼，看懂直接跪下！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel="">
+                                                <div>你好呀，我是歪歪。我最近在 stackoverflow 上看到一段代码，怎么说呢。就是初看一脸懵逼，看懂直接跪下！我先带你看看
+                                                    stackoverflow 上的这个问题是啥，然后引出这段代码：</div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>2.6w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>322</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>58</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article1.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3360527239635373" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">一颗彪悍的种子</div>
+                                    </a>
+                                    <div class="date">3月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                        <a href="https://juejin.cn/tag/JVM" target="_blank" rel="" class="tag">JVM</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel=""
+                                                title="我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！"
+                                                class="title">我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel="">
+                                                <div>
+                                                    什么是JVM？为什么说JVM是要这样子呢？我带着这些疑问从冯诺依曼计算机体系追问计算机结构的思想是什么，操作系统的的本质又是什么？原来一切如此！
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>1.9w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>139</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article2.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3878732754067063" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">小木公子</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel=""
+                                                title="一只代码狗的年中自述" class="title">一只代码狗的年中自述</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel="">
+                                                <div>引言 自述
+                                                    我大学毕业于安徽一所普通的本科院校，生于安徽的某个小县城的某个普通的家庭，农民的儿子，家里在生我之前已经有了三个姐姐，所以虽说家庭条件一般，但我在家里的地位可算得上宠上天的那种角色，一路走
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>6376</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>49</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>44</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article3.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/712958874760926" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">JosiahZhao</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                        <a href="https://juejin.cn/tag/JavaScript" target="_blank" rel=""
+                                            class="tag">JavaScript</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel=""
+                                                title="聊一聊前端程序员的现状与挑战" class="title">聊一聊前端程序员的现状与挑战</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel="">
+                                                <div>
+                                                    前端这一块，得益于日益更新的前端框架降低了入门门槛，得益于目前全自动、半自动化的开发、测试、上线流程，也得益于目前越来越标准的产品设计流程和规范，等等这些都会让你的开发效率和工作量评估更加透明化。
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>3931</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>14</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3702810893364350" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">why技术</div>
+                                    </a>
+                                    <div class="date">4月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%90%8E%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">后端</a>
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel=""
+                                                title="初看一脸懵逼，看懂直接跪下！" class="title">初看一脸懵逼，看懂直接跪下！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel="">
+                                                <div>你好呀，我是歪歪。我最近在 stackoverflow 上看到一段代码，怎么说呢。就是初看一脸懵逼，看懂直接跪下！我先带你看看
+                                                    stackoverflow 上的这个问题是啥，然后引出这段代码：</div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>2.6w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>322</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>58</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article1.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3360527239635373" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">一颗彪悍的种子</div>
+                                    </a>
+                                    <div class="date">3月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                        <a href="https://juejin.cn/tag/JVM" target="_blank" rel="" class="tag">JVM</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel=""
+                                                title="我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！"
+                                                class="title">我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel="">
+                                                <div>
+                                                    什么是JVM？为什么说JVM是要这样子呢？我带着这些疑问从冯诺依曼计算机体系追问计算机结构的思想是什么，操作系统的的本质又是什么？原来一切如此！
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>1.9w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>139</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article2.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3878732754067063" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">小木公子</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel=""
+                                                title="一只代码狗的年中自述" class="title">一只代码狗的年中自述</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel="">
+                                                <div>引言 自述
+                                                    我大学毕业于安徽一所普通的本科院校，生于安徽的某个小县城的某个普通的家庭，农民的儿子，家里在生我之前已经有了三个姐姐，所以虽说家庭条件一般，但我在家里的地位可算得上宠上天的那种角色，一路走
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>6376</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>49</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>44</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article3.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/712958874760926" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">JosiahZhao</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                        <a href="https://juejin.cn/tag/JavaScript" target="_blank" rel=""
+                                            class="tag">JavaScript</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel=""
+                                                title="聊一聊前端程序员的现状与挑战" class="title">聊一聊前端程序员的现状与挑战</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel="">
+                                                <div>
+                                                    前端这一块，得益于日益更新的前端框架降低了入门门槛，得益于目前全自动、半自动化的开发、测试、上线流程，也得益于目前越来越标准的产品设计流程和规范，等等这些都会让你的开发效率和工作量评估更加透明化。
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>3931</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>14</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3702810893364350" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">why技术</div>
+                                    </a>
+                                    <div class="date">4月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%90%8E%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">后端</a>
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel=""
+                                                title="初看一脸懵逼，看懂直接跪下！" class="title">初看一脸懵逼，看懂直接跪下！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel="">
+                                                <div>你好呀，我是歪歪。我最近在 stackoverflow 上看到一段代码，怎么说呢。就是初看一脸懵逼，看懂直接跪下！我先带你看看
+                                                    stackoverflow 上的这个问题是啥，然后引出这段代码：</div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>2.6w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>322</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>58</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article1.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3360527239635373" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">一颗彪悍的种子</div>
+                                    </a>
+                                    <div class="date">3月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                        <a href="https://juejin.cn/tag/JVM" target="_blank" rel="" class="tag">JVM</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel=""
+                                                title="我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！"
+                                                class="title">我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel="">
+                                                <div>
+                                                    什么是JVM？为什么说JVM是要这样子呢？我带着这些疑问从冯诺依曼计算机体系追问计算机结构的思想是什么，操作系统的的本质又是什么？原来一切如此！
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>1.9w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>139</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article2.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3878732754067063" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">小木公子</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel=""
+                                                title="一只代码狗的年中自述" class="title">一只代码狗的年中自述</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel="">
+                                                <div>引言 自述
+                                                    我大学毕业于安徽一所普通的本科院校，生于安徽的某个小县城的某个普通的家庭，农民的儿子，家里在生我之前已经有了三个姐姐，所以虽说家庭条件一般，但我在家里的地位可算得上宠上天的那种角色，一路走
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>6376</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>49</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>44</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article3.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="advertisement">
+                                <div class="meta-container">
+                                    <div class="user-message">
+                                        <a href="#" target="_blank" rel="" class="userbox">
+                                            <div class="popover-box user-popover">掘金直播</div>
+                                        </a>
+                                    </div>
+                                    <data class="dividing"></data>
+                                    <div class="date">1天前</div>
+                                </div>
+                                <div class="tag">广告</div>
+                                <div class="main">
+                                    <div class="info-box">
+                                        <a href="https://juejin.cn/live/257958?utm_source=web1&utm_medium=feed&utm_campaign=xunlianying06"
+                                            target="_blank" class="title">【创作者训练营】玩转掘金创作功能，助力创作成长</a>
+                                        <a href="https://juejin.cn/live/257958?utm_source=web1&utm_medium=feed&utm_campaign=xunlianying06"
+                                            target="_blank"
+                                            class="description">工欲善其事必先利其器，你是否对掘金的创作工具了如指掌呢？你是否了解创作等级和权益是如何对应的？掘金APP包含哪些与创作相关的功能？本次直播我们邀请到了掘金负责创作者工具的产品同学雪菲来分享。</a>
+                                    </div>
+                                    <img src="./img/advertisement.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 后面是文章列表 -->
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/712958874760926" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">JosiahZhao</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                        <a href="https://juejin.cn/tag/JavaScript" target="_blank" rel=""
+                                            class="tag">JavaScript</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel=""
+                                                title="聊一聊前端程序员的现状与挑战" class="title">聊一聊前端程序员的现状与挑战</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel="">
+                                                <div>
+                                                    前端这一块，得益于日益更新的前端框架降低了入门门槛，得益于目前全自动、半自动化的开发、测试、上线流程，也得益于目前越来越标准的产品设计流程和规范，等等这些都会让你的开发效率和工作量评估更加透明化。
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>3931</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>14</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3702810893364350" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">why技术</div>
+                                    </a>
+                                    <div class="date">4月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%90%8E%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">后端</a>
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel=""
+                                                title="初看一脸懵逼，看懂直接跪下！" class="title">初看一脸懵逼，看懂直接跪下！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel="">
+                                                <div>你好呀，我是歪歪。我最近在 stackoverflow 上看到一段代码，怎么说呢。就是初看一脸懵逼，看懂直接跪下！我先带你看看
+                                                    stackoverflow 上的这个问题是啥，然后引出这段代码：</div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>2.6w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>322</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>58</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article1.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3360527239635373" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">一颗彪悍的种子</div>
+                                    </a>
+                                    <div class="date">3月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                        <a href="https://juejin.cn/tag/JVM" target="_blank" rel="" class="tag">JVM</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel=""
+                                                title="我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！"
+                                                class="title">我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel="">
+                                                <div>
+                                                    什么是JVM？为什么说JVM是要这样子呢？我带着这些疑问从冯诺依曼计算机体系追问计算机结构的思想是什么，操作系统的的本质又是什么？原来一切如此！
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>1.9w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>139</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article2.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3878732754067063" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">小木公子</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel=""
+                                                title="一只代码狗的年中自述" class="title">一只代码狗的年中自述</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel="">
+                                                <div>引言 自述
+                                                    我大学毕业于安徽一所普通的本科院校，生于安徽的某个小县城的某个普通的家庭，农民的儿子，家里在生我之前已经有了三个姐姐，所以虽说家庭条件一般，但我在家里的地位可算得上宠上天的那种角色，一路走
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>6376</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>49</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>44</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article3.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/712958874760926" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">JosiahZhao</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                        <a href="https://juejin.cn/tag/JavaScript" target="_blank" rel=""
+                                            class="tag">JavaScript</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel=""
+                                                title="聊一聊前端程序员的现状与挑战" class="title">聊一聊前端程序员的现状与挑战</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel="">
+                                                <div>
+                                                    前端这一块，得益于日益更新的前端框架降低了入门门槛，得益于目前全自动、半自动化的开发、测试、上线流程，也得益于目前越来越标准的产品设计流程和规范，等等这些都会让你的开发效率和工作量评估更加透明化。
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>3931</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>14</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3702810893364350" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">why技术</div>
+                                    </a>
+                                    <div class="date">4月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%90%8E%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">后端</a>
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel=""
+                                                title="初看一脸懵逼，看懂直接跪下！" class="title">初看一脸懵逼，看懂直接跪下！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel="">
+                                                <div>你好呀，我是歪歪。我最近在 stackoverflow 上看到一段代码，怎么说呢。就是初看一脸懵逼，看懂直接跪下！我先带你看看
+                                                    stackoverflow 上的这个问题是啥，然后引出这段代码：</div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>2.6w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>322</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>58</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article1.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3360527239635373" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">一颗彪悍的种子</div>
+                                    </a>
+                                    <div class="date">3月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                        <a href="https://juejin.cn/tag/JVM" target="_blank" rel="" class="tag">JVM</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel=""
+                                                title="我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！"
+                                                class="title">我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel="">
+                                                <div>
+                                                    什么是JVM？为什么说JVM是要这样子呢？我带着这些疑问从冯诺依曼计算机体系追问计算机结构的思想是什么，操作系统的的本质又是什么？原来一切如此！
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>1.9w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>139</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article2.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3878732754067063" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">小木公子</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel=""
+                                                title="一只代码狗的年中自述" class="title">一只代码狗的年中自述</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel="">
+                                                <div>引言 自述
+                                                    我大学毕业于安徽一所普通的本科院校，生于安徽的某个小县城的某个普通的家庭，农民的儿子，家里在生我之前已经有了三个姐姐，所以虽说家庭条件一般，但我在家里的地位可算得上宠上天的那种角色，一路走
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>6376</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>49</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>44</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article3.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/712958874760926" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">JosiahZhao</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                        <a href="https://juejin.cn/tag/JavaScript" target="_blank" rel=""
+                                            class="tag">JavaScript</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel=""
+                                                title="聊一聊前端程序员的现状与挑战" class="title">聊一聊前端程序员的现状与挑战</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel="">
+                                                <div>
+                                                    前端这一块，得益于日益更新的前端框架降低了入门门槛，得益于目前全自动、半自动化的开发、测试、上线流程，也得益于目前越来越标准的产品设计流程和规范，等等这些都会让你的开发效率和工作量评估更加透明化。
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>3931</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>14</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3702810893364350" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">why技术</div>
+                                    </a>
+                                    <div class="date">4月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%90%8E%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">后端</a>
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel=""
+                                                title="初看一脸懵逼，看懂直接跪下！" class="title">初看一脸懵逼，看懂直接跪下！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel="">
+                                                <div>你好呀，我是歪歪。我最近在 stackoverflow 上看到一段代码，怎么说呢。就是初看一脸懵逼，看懂直接跪下！我先带你看看
+                                                    stackoverflow 上的这个问题是啥，然后引出这段代码：</div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>2.6w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>322</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>58</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article1.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3360527239635373" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">一颗彪悍的种子</div>
+                                    </a>
+                                    <div class="date">3月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                        <a href="https://juejin.cn/tag/JVM" target="_blank" rel="" class="tag">JVM</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel=""
+                                                title="我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！"
+                                                class="title">我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel="">
+                                                <div>
+                                                    什么是JVM？为什么说JVM是要这样子呢？我带着这些疑问从冯诺依曼计算机体系追问计算机结构的思想是什么，操作系统的的本质又是什么？原来一切如此！
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>1.9w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>139</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article2.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3878732754067063" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">小木公子</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel=""
+                                                title="一只代码狗的年中自述" class="title">一只代码狗的年中自述</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel="">
+                                                <div>引言 自述
+                                                    我大学毕业于安徽一所普通的本科院校，生于安徽的某个小县城的某个普通的家庭，农民的儿子，家里在生我之前已经有了三个姐姐，所以虽说家庭条件一般，但我在家里的地位可算得上宠上天的那种角色，一路走
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>6376</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>49</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>44</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article3.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/712958874760926" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">JosiahZhao</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                        <a href="https://juejin.cn/tag/JavaScript" target="_blank" rel=""
+                                            class="tag">JavaScript</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel=""
+                                                title="聊一聊前端程序员的现状与挑战" class="title">聊一聊前端程序员的现状与挑战</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7113560877067927560" target="_blank" rel="">
+                                                <div>
+                                                    前端这一块，得益于日益更新的前端框架降低了入门门槛，得益于目前全自动、半自动化的开发、测试、上线流程，也得益于目前越来越标准的产品设计流程和规范，等等这些都会让你的开发效率和工作量评估更加透明化。
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>3931</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>14</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>5</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3702810893364350" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">why技术</div>
+                                    </a>
+                                    <div class="date">4月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%90%8E%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">后端</a>
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel=""
+                                                title="初看一脸懵逼，看懂直接跪下！" class="title">初看一脸懵逼，看懂直接跪下！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7085941661770973214" target="_blank" rel="">
+                                                <div>你好呀，我是歪歪。我最近在 stackoverflow 上看到一段代码，怎么说呢。就是初看一脸懵逼，看懂直接跪下！我先带你看看
+                                                    stackoverflow 上的这个问题是啥，然后引出这段代码：</div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>2.6w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>322</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>58</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article1.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3360527239635373" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">一颗彪悍的种子</div>
+                                    </a>
+                                    <div class="date">3月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/Java" target="_blank" rel="" class="tag">Java</a>
+                                        <a href="https://juejin.cn/tag/JVM" target="_blank" rel="" class="tag">JVM</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel=""
+                                                title="我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！"
+                                                class="title">我从冯·诺依曼计算机体系，追溯到了JVM，一切原来如此！</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7098500546297856030" target="_blank" rel="">
+                                                <div>
+                                                    什么是JVM？为什么说JVM是要这样子呢？我带着这些疑问从冯诺依曼计算机体系追问计算机结构的思想是什么，操作系统的的本质又是什么？原来一切如此！
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>1.9w</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>139</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article2.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="entry" style="margin-bottom: 0px;">
+                                <div class="meta-container">
+                                    <a href="https://juejin.cn/user/3878732754067063" target="_blank" rel=""
+                                        class="user-message">
+                                        <div class="popover-box user-popover">小木公子</div>
+                                    </a>
+                                    <div class="date">1月前</div>
+                                    <div class="tag_list">
+                                        <a href="https://juejin.cn/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel=""
+                                            class="tag">前端</a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                    <div class="content-main">
+                                        <div class="title-row">
+                                            <!-- 原文链接： -->
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel=""
+                                                title="一只代码狗的年中自述" class="title">一只代码狗的年中自述</a>
+                                        </div>
+                                        <div class="abstract">
+                                            <a href="https://juejin.cn/post/7122020592584228895" target="_blank" rel="">
+                                                <div>引言 自述
+                                                    我大学毕业于安徽一所普通的本科院校，生于安徽的某个小县城的某个普通的家庭，农民的儿子，家里在生我之前已经有了三个姐姐，所以虽说家庭条件一般，但我在家里的地位可算得上宠上天的那种角色，一路走
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="action-list jh-timeline-action-area">
+                                            <li class="item view">
+                                                <i></i>
+                                                <span>6376</span>
+                                            </li>
+                                            <li class="item like">
+                                                <i></i>
+                                                <span>49</span>
+                                            </li>
+                                            <li class="item comment">
+                                                <i></i>
+                                                <span>44</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img src="./img/article3.jpg" alt="" class="lazy thumb" loading="lazy" style>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right-content">
+            <div>
+                <img src="./img/signin_tip.png" alt="">
+            </div>
+            <div>
+                <a href="#"><img src="./img/applink.png" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/appdownload_img.jpg" alt=""></a>
+            </div>
+            <div><img src="./img/stick-img.jpg" alt=""></div>
+            <div><img src="./img/download.png" alt=""></div>
+            <div><img src="./img/userblock.png" alt=""></div>
+            <div><img src="./img/linklist.png" alt=""></div>
+            <div><img src="./img/index.png" alt=""></div>
+            <!-- 笨方法 -->
+            <div class="hiddenimgbox">
+                <div class="hiddenimg">
+                    <a href="#"><img src="./img/applink.png" alt=""></a>
+                </div>
+                <div class="hiddenimg">
+                    <a href="#"><img src="./img/appdownload_img.jpg" alt=""></a>
+                </div>
+                <div class="hiddenimg"><img src="./img/stick-img.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- 回到顶部和反馈 -->
+    <div class="global-component-box">
+        <div class="alert-list alert-list">
+        </div> 
+        <div class="suspension-panel suspension-panel">
+            <button title="回到顶部" class="btn to-top-btn" style>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.75 1C2.33579 1 2 1.33579 2 1.75C2 2.16421 2.33579 2.5 2.75 2.5H13.25C13.6642 2.5 14 2.16421 14 1.75C14 1.33579 13.6642 1 13.25 1H2.75ZM7.24407 3.87287C7.64284 3.41241 8.35716 3.41241 8.75593 3.87287L13.0622 8.84535C13.6231 9.49299 13.163 10.5 12.3063 10.5H10V14C10 14.5523 9.55228 15 9 15H7C6.44772 15 6 14.5523 6 14V10.5H3.69371C2.83696 10.5 2.37691 9.49299 2.93778 8.84535L7.24407 3.87287Z" fill="#8A919F"></path>
+                </svg>
+            </button> 
+            <button title="建议反馈" class="btn meiqia-btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-feedback">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8252 4.002C1.8252 2.80032 2.79935 1.82617 4.00102 1.82617H12.001C13.2027 1.82617 14.1768 2.80032 14.1768 4.002V9.71628C14.1768 10.918 13.2027 11.8921 12.001 11.8921H9.43308L6.92709 14.1281C6.4455 14.5578 5.68234 14.216 5.68234 13.5706V11.8921H4.00102C2.79934 11.8921 1.8252 10.918 1.8252 9.71628V4.002ZM11.2414 7.86753C11.3826 7.65526 11.3249 7.36878 11.1126 7.22764C10.9004 7.08651 10.6139 7.14417 10.4728 7.35643C9.94042 8.15705 9.03153 8.68309 7.99997 8.68309C6.96841 8.68309 6.05952 8.15705 5.52719 7.35643C5.38605 7.14417 5.09957 7.08651 4.88731 7.22764C4.67504 7.36878 4.61738 7.65526 4.75852 7.86753C5.45467 8.91452 6.64645 9.60617 7.99997 9.60617C9.35349 9.60617 10.5453 8.91452 11.2414 7.86753Z" fill="#1E80FF"></path>
+                </svg>
+            </button>  
+        </div>
+      </div>
+</body>
+
+</html>
